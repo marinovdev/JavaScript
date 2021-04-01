@@ -1,0 +1,102 @@
+Estimation for reading the JS Reference
+
+Sample Text time to read estimation result:
+1m, 14 sec (74 sec)
+Actual time to read text : 1m, 40 sec (100sec)
+(+ 33 %)
+
+
+1) JavaScript guide - 73 Subjects
+ (estimated : 220 minutes, 39 seconds)
+(expected: 295 minutes )
+
+2) Understanding client-side JavaScript frameworks (React only) - + 1 subject + 7 subjects
+ (estimated :  107 minutes, 23 seconds)
+(expected: 142 minutes )
+
+3) A re-introduction to JavaScript (JS tutorial)  + 1 subject
+ (estimated :  30 minutes, 25 seconds.)
+(expected: 41 minutes )
+
+4) JavaScript data types and data structures
+ + 1subject + 17 subjects
+
+(estimated :  11 minutes, 14 seconds.)
+(expected: 14 minutes )
+
+
+
+5) Equality comparisons and sameness
+1 subject
+(estimated :   9 minutes, 36 seconds)
+(expected: 12 minutes )
+
+6) Closures + 1 subject
+(estimated :   : 14 minutes, 18 seconds)
+(expected: 19 minutes )
+
+
+--- ADVANCED -----
+
+Inheritance and the prototype chain + 1
+(estimated :   :  17 minutes, 27 seconds)
+(expected: 24 minutes )
+
+
+Strict mode + 1
+(estimated :   : 16 minutes, 41 seconds.)
+(expected: 22 minutes )
+
+
+JavaScript typed arrays + 1
+(estimated :   : 6 minutes, 52 seconds)
+(expected: 9 minutes )
+
+
+
+Memory Management + 1
+(estimated :   8 minutes, 30 seconds.)
+(expected: 11 30  minutes )
+
+
+Concurrency model and Event Loop + 1
+(estimated :   5 minutes, 41 seconds)
+(expected: 8 mins )
+
+-----Reference
+
+
+Standard objects + 81
+
+- including Date
+(estimated :   :  434 minutes, 49 seconds)
+(expected: 584 minutes )
+
+(estimated :   :  1296 minutes)
+
+________
+1893 / 60 = 32
+
+Expressions and operators + 74
+
+
+
+Statements and declarations + 28
+
+
+
+Functions + 1 
+
+
+
+JavaScript shells + 1
+
+==================================
+==================================
+==================================
+==================================
+==================================
+
+CURRENTLY READING:
+
+JS Guide 07.03.2021 
