@@ -462,6 +462,17 @@ Number(undefined)  // NaN
 
 ### 3.6.1. String
 
+#### 3.6.2. %template syntax
+
+```js
+function func(num, str){
+    console.log('someth %d string: %s', num, str);
+}
+
+func(1000, 'text'); //someth 1000 string: text
+
+```
+
 --
 
 ### 3.6.2. RegExp
@@ -2508,4 +2519,9 @@ Output:
 >yarn add express
 
 :information_source: The project name should never be named the same as a dependancy that might be used in the app
+
+### 11.11. Error  code: 'ENOENT'
+
+- ENOENT is also emitted when the command does not exist.
+
 

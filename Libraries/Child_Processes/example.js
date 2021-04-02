@@ -1,14 +1,9 @@
-const { spawn } = require('child_process');
-const ls = spawn('ls', ['-lh', '/usr']);
+const cp = require('child_process');
+const n = cp.fork(`${__dirname}/sub_process.js`);
 
-ls.stdout.on('data', (data) => {
-  console.log(`stdout: ${data}`);
+n.on('message', (m) => {
+  console.log('PARENT got message:', m);
 });
 
-ls.stderr.on('data', (data) => {
-  console.error(`stderr: ${data}`);
-});
-
-ls.on('close', (code) => {
-  console.log(`child process exited with code ${code}`);
-});
+// Causes the child to print: CHILD got message: { hello: 'world' }
+n.send({ hello: 'world' });
