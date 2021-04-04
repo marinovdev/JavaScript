@@ -12,3 +12,6 @@ npm install @material-ui/core
 // with yarn
 yarn add @material-ui/core
 ```
+
+### 1. PhantomJS 
+- to provide a terminal-friendly browser environment

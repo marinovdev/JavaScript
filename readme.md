@@ -18,6 +18,7 @@
 ### [6. Automation](#6-automation)
 ### [7. NodeJS](#7-nodejs)
 ### [8. Libraries](#8-libraries)
+### [8.1. WEB API](#81-web-api-1)
 ### :capital_abcd: [10. Definitions](#capital_abcd-10-definitions-1)
 ### :x: [11. Errors](#x-11-errors-1)
 ___
@@ -1997,11 +1998,32 @@ ___
 
 # :books: 8. Libraries
 
+### CONTENT
+### 8.1. List of libraries
+### 8.2. WEB API
+
 ### List of libraries:
 
 #### 1. [Browserify](http://browserify.org/)
 
 Browserify is an open-source JavaScript tool that allows developers to write Node.js-style modules that compile for use in the browser. Browserify lets you use require in the browser, the same way you'd use it in Node. It's not just syntactic sugar for loading scripts on the client.
+
+## 8.2. WEB API
+
+### 8.2.1. Understanding setImmediate()
+
+When you want to execute some piece of code asynchronously, but as soon as possible, one option is to use the setImmediate() function provided by Node.js:
+
+setImmediate(() => {
+  //run something
+})
+Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.
+
+How is setImmediate() different from setTimeout(() => {}, 0) (passing a 0ms timeout), and from process.nextTick()?
+
+A function passed to process.nextTick() is going to be executed on the current iteration of the event loop, after the current operation ends. This means it will always execute before setTimeout and setImmediate.
+
+A setTimeout() callback with a 0ms delay is very similar to setImmediate(). The execution order will depend on various factors, but they will be both run in the next iteration of the event loop.
 ___
 
 # :capital_abcd: 10. Definitions
