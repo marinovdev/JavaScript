@@ -1819,11 +1819,17 @@ ___
 
 </details>
 
+<br>
+<br>
 
 ## 7.17. Events
 
+<br>
+
 ### 7.17.1. Awaiting multiple events emitted on process.nextTick()#
 There is an edge case worth noting when using the events.once() function to await multiple events emitted on in the same batch of process.nextTick() operations, or whenever multiple events are emitted synchronously. Specifically, because the process.nextTick() queue is drained before the Promise microtask queue, and because EventEmitter emits all events synchronously, it is possible for events.once() to miss an event.
+
+<br>
 
 ```js
 const { EventEmitter, once } = require('events');
@@ -1848,10 +1854,19 @@ process.nextTick(() => {
 foo().then(() => console.log('done'));
 ```
 
+<br>
+
 for more details in this [YouTube video](https://www.youtube.com/watch?v=PNa9OMajw9w)
+
+<br>
+
 graphical explanation:
+
+<br>
+
 ![img](./utils/img/nodejs_event_loop.png)
 
+<br>
 ---
 ## 7.25. Modules: CommonJS modules
 
