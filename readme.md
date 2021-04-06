@@ -1767,8 +1767,8 @@ ___
 
 # 7. NodeJS
 
-<details>
-<summary>CONTENT</summary>
+
+### CONTENT
 
 #### 7.1. Assertion Testing
 #### 7.2. Async Hooks
@@ -1817,7 +1817,6 @@ ___
 #### 7.45. VM
 #### 7.46. ZLIB
 
-</details>
 
 <br>
 <br>
@@ -1851,6 +1850,30 @@ process.nextTick(() => {
   myEE.emit('foo');
 });
 
+foo().then(() => console.log('done')); //bar
+```
+
+<br>
+
+To catch both events, create each of the Promises before awaiting either of them, then it becomes possible to use Promise.all(), Promise.race(), or Promise.allSettled():
+
+<br>
+
+```js
+const { EventEmitter, once } = require('events');
+
+const myEE = new EventEmitter();
+
+async function foo() {
+  await Promise.all([once(myEE, 'bar'), once(myEE, 'foo')]);
+  console.log('foo', 'bar');
+}
+
+process.nextTick(() => {
+  myEE.emit('bar');
+  myEE.emit('foo');
+});
+
 foo().then(() => console.log('done'));
 ```
 
@@ -1867,7 +1890,9 @@ graphical explanation:
 ![img](./utils/img/nodejs_event_loop.png)
 
 <br>
+
 ---
+
 ## 7.25. Modules: CommonJS modules
 
 

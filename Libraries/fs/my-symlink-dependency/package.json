@@ -1,0 +1,15 @@
+{
+  "name": "my-symlink-dependency",
+  "version": "1.0.0",
+  "main": "my-symlink-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "my-symlink-dependency": "./my-symlink-example.js"
+  },
+  "keywords": [],
+  "description": ""
+}
