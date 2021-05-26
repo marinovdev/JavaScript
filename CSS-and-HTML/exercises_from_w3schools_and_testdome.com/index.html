@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete me!</title>
+    <style>
+        td {
+          text-align: right;
+          width: 33%;
+        }
+        td, th, table {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+        th {
+          text-align: left;
+        }
+      </style>
+</head>
+<body>
+    <h1>London</h1>
+<hr>
+
+
+<p style="color: blue;"><em>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</em></p>
+<hr>
+<p style="color: blue;"><mark>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</mark></p>
+
+<hr>
+make text righ to left
+<br>
+
+<bdo dir="rtl">
+    What a beautiful day!
+    </bdo>
+    
+<hr>
+abbriviation with title
+<br>
+
+<p>The <abbr title="World Health Organization"> WHO</abbr> was founded in 1948.</p>
+
+<hr>
+This link opens in new windows because it has "target" attribute set to "_blank"
+<br>
+<a href="html_images.asp" target="_blank">HTML Images</a>
+
+<hr>
+
+Add a "tooltip" to the link.
+
+The "tooltip" should say "Home".
+<br>
+
+<a href="default.html" title="Home">Back to Home</a>
+<hr>
+
+Make the image below float to the right of the paragraph.
+<br>
+
+<p>
+<img src="smiley.gif" style="float:right;" width="150px" height="150px">This is a paragraph.This paragraph contains an image</p>
+
+<hr>
+Table with caption "Names":
+<table>
+    <caption>Names</caption>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+</table>
+
+<hr>
+
+Make a columnn span 2 columns:
+
+<br>
+
+<table>
+<tr>
+<th colspan="2">Name</th>
+<th>Age</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+</table>
+
+<hr>
+Make the cell 2 rows
+<br>
+
+<table style="border: 1px solid black">
+    <tr>
+        <th>Name</th>
+        <td>Jill Smith</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Phone</td>
+        <td>555-77854</td>
+    </tr>
+    <tr>
+        <td>555-77854</td>
+    </tr>
+</table>
+
+
+<hr>
+Make the ul display squares
+<br>
+
+<ul style="list-style-type: square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<hr>
+ol that displays letters
+<code>type="A"</code>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<hr>
+
+ol that displays upper case roman numbers:
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<hr>
+Description list:
+<br>
+
+<dl>
+    <dt>Coffee</dt>
+  <dd>
+  - black hot drink
+  </dd>
+    <dt>Milk</dt>
+  <dd>
+  - white cold drink
+  </dd>
+</dl>
+
+<hr>
+
+Define text inside code element as preformated text to preserve spaces and line breaks:
+
+<p>Use &ltpre>&ltcode>&lt/code>&lt/pre> for this purpose</p>
+<pre>
+    <code>
+        var person = {
+            firstName:"John",
+            lastName:"Doe"
+        }
+    </code>
+</pre>
+
+This is code block without the pre tag:
+<br>
+
+<code>
+    var person = {
+        firstName:"John",
+        lastName:"Doe"
+    }
+</code>
+
+<hr>
+Example with the &ltvar> tag. This tag is used to define variables. Lets do it with "x":
+
+<p>A simple math equation: <var>x</var>= 3 + 2; </p>
+
+It looks the same as if the x letter was plasend in emphisize tag &lti>
+
+<hr>
+
+A drop down list with the name cars and a few items in it:
+
+<form action="/action_page.php">
+    <select name="cars">
+        <option value="BMW">BMW option</option>
+        <option value="Renault">Renault option</option>
+    </select>
+</form>
+
+<hr>
+
+Input field that can only contain numbers from 1 to 5:
+
+<br>
+
+<input type="number" min="1" max="5">
+
+<hr>
+
+Disabled input form:
+
+<br>
+
+<input type="text" disabled value="Field is disabled">
+
+<hr>
+
+Readonly input form (it's value cannot be changed):
+
+<br>
+
+<input type="text" readonly value="Field is readonly">
+
+<hr>
+
+make a table:
+
+<br>
+
+<table>
+    <caption>Purchase Orders</caption>
+    <thead >
+      <tr >
+      <td style="text-align:left"><b>Order Date</b></td>
+      <td style="text-align:left"><b>SKU</b></td>
+      <td style="text-align:left"><b>Quantity</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>07-16-2018</td>
+        <td>523402</td>
+        <td>54</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
