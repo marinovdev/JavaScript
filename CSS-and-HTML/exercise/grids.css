@@ -1,0 +1,305 @@
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  margin:0;
+}
+
+div.orange-container{
+  display: flex;
+  width: 40vw;
+  height: 60vw;
+  background-color: orange;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  overflow: visible;
+}
+
+div.blue-boxes{
+  display: flex;
+  width: 20vw;
+  height: 20vw;
+  background-color: rgb(53, 53, 255);
+  flex-flow: row wrap;
+}
+
+div.blue-boxes > div {
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  margin: 0.8vw;
+}
+
+
+div.flex-dots-wrapper-right {
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  margin-left: 58.5vw;
+}
+
+div.flex-dots-right {
+  margin-right: 30vw;
+}
+
+
+div.flex-dots-wrapper {
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+div.flex-dots {
+  margin-left: 30vw;
+}
+
+
+div.box1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 10% auto 10%;
+    background-color: aquamarine;
+    width: 100%;
+    font: 24px;
+    font-weight: 600;
+    color: white;
+    /* padding: 0 2em; */
+}
+
+.box1 > div {
+    text-align: center;
+    margin: 0 0 4em 0;
+}
+
+div.box1 > div:nth-of-type(1) {
+    background-color: rgb(39, 87, 71);
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 2em 2em;
+}
+
+div.box1 > div:nth-of-type(2) {
+    background-color: rgb(42, 133, 102);
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 2em 2em;
+}
+
+div.box1 > div:nth-of-type(3) {
+    background-color: rgb(35, 173, 127);
+    grid-column-start: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 2em 2em;
+}
+
+div.chess-board {
+    background-color: white;
+    display: grid;
+    margin: 2em 2em;
+    border: 1px solid black;
+    width: 30vw;
+    height: 30vw;
+    grid-template-columns: repeat(3, 1fr);        
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "A1 A2 A3" "B1 B2 B3" "C1 C2 C3";        
+}
+
+div.chess-board > div {
+    border: 1px solid black;
+    color: brown;
+}
+
+div.chess-board > div:nth-child(odd) {
+    background-color: black;
+}
+
+div.chess-board > div:nth-of-type(1) {
+    grid-area: A1;
+}
+div.chess-board > div:nth-of-type(2) {
+    grid-area: A2;
+}
+div.chess-board > div:nth-of-type(3) {
+    grid-area: A3;
+}
+div.chess-board > div:nth-of-type(4) {
+    grid-area: B1;
+}
+div.chess-board > div:nth-of-type(5) {
+    grid-area: B2;
+}
+div.chess-board > div:nth-of-type(6) {
+    grid-area: B3;
+}
+div.chess-board > div:nth-of-type(7) {
+    grid-area: C1;
+}
+div.chess-board > div:nth-of-type(8) {
+    grid-area: C2;
+}
+div.chess-board > div:nth-of-type(9) {
+    grid-area: C3;
+}
+
+#grid {
+    height: 100px;
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 10px;
+    width: 25%;
+  }
+  
+  #grid > div {
+    background-color: lime;
+  }
+
+  div.container1 {
+      width: 30vw;
+      height: 30vw;
+      border: 1px dotted gray;
+      margin: 1em;
+      text-align: top-left;
+      position: relative;
+  }
+
+  div.container1 > div {
+    position: absolute;
+  }
+  div.container1 > div.circle1 {
+    width: 20vw;
+    height: 20vw;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle2 {
+    width: 14vw;
+    height: 14vw;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle3 {
+    width: 11vw;
+    height: 11vw;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle4 {
+    width: 9vw;
+    height: 9vw;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle5 {
+    width: 6.8vw;
+    height: 6.8vw;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle6 {
+    width: 5.1vw;
+    height: 5.1vw;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+  div.container1 > div.circle7 {
+    width: 3.4vw;
+    height: 3.4vw;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
+    left: 18%;
+    top: 18%;
+  }
+
+  div.holder {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+div.dots-container {
+    border: 1px dotted gray;
+    width: 30vw;
+    height: 30vw;
+    margin: 1em;
+    text-align: top-left;
+
+}
+
+div.dots {
+display: flex;
+flex-flow: row wrap;
+}
+
+div.dots > div{
+    background-color: black;
+    min-width: 5vw;
+    min-height: 5vw;
+    margin: 2vw;
+}
+.wrapper2 {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .wrapper2 > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+  }
+  
+  .footer {
+    background: lightgreen;
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .aside-1 {
+    background: gold;
+  }
+  
+  .aside-2 {
+    background: hotpink;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+
+
+
+

@@ -2274,6 +2274,10 @@ These two adjectives describe phenomena in programming languages:
 
 - Static means that something is related to source code and can be determined without executing code.
 - Dynamic means at runtime.
+
+
+### 10.4. Middleware
+A middleware is basically a function that will the receive the Request and Response objects, just like your route Handlers do. As a third argument you have another function which you should call once your middleware code completed.
 ___
 
 # :x: 11. Errors
