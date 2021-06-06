@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 10vw;
+    height: 10vw;
+}
+
+.default {
+    background-color: rgb(204, 135, 70);
+}
+.padding-applied {
+    background-color: rgb(57, 134, 89);
+    padding: 5em;
+}
+.box-sizing-applied {
+    background-color: rgb(149, 131, 163);
+    padding: 5em;
+    box-sizing: border-box;
+}
