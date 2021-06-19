@@ -1,11 +1,29 @@
 *******
 CURRENT STACK
 Servers: Nginx, 
-
+Ultra-Clean™ Architecture, powerful low-code tactics, Rapid Application Development (RAD) techniques
+69 gang-of-four pattern projects
+46 head-first pattern projects
+Fowler's enterprise patterns
+Multi-tier patterns
+Convention over configuration
+Active Record and CQRS patterns
+Repository and Unit-of-Work patterns
+MVC, MVP, & MVVM patterns
+SparkTM Rapid App Dev (RAD) data access
+Complete Analytics, Dashboard App
+Complete Art Shop, Ecommerce App
+Complete SaaS, Multi-Tenant App
+Complete CRM, Customer Relationship App
+33-Day App Factory™
+Everything 100% source code
+Understanding of React.js – its lifecycle methods, concept of Virtual DOM, Error Boundaries 
+What is the time complexity of a block of code?	
 
 Cloudflare - compress web pages to reduce file size and bandwith
 
 
+********************************************************************
 Requirements
 • Portfolio displaying work as a Web Designer
 • Demonstrable graphic design skills

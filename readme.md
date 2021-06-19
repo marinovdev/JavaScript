@@ -2098,6 +2098,53 @@ How is setImmediate() different from setTimeout(() => {}, 0) (passing a 0ms time
 A function passed to process.nextTick() is going to be executed on the current iteration of the event loop, after the current operation ends. This means it will always execute before setTimeout and setImmediate.
 
 A setTimeout() callback with a 0ms delay is very similar to setImmediate(). The execution order will depend on various factors, but they will be both run in the next iteration of the event loop.
+
+
+## 8.3. JSHint
+
+1) install the plugin
+
+2) install the global module
+> npm i -g jshint
+
+3) For some reason my global package is unreachable
+so i also isntalled the local module
+> npm i jshint
+
+4) find a config file 
+Github [link](https://gist.github.com/bolshchikov/10016245) to the .jshintrc file
+
+just added the option
+```
+  "maxcomplexity" : 10
+```
+
+this is because i want i warning when circular complexity exceeds 10.
+Monitor this value and all ather errors from the Problems tab
+
+5) How it works
+
+lets try for instance this code:
+```js
+var source = [
+    'function goo() {}',
+    'foo = 3;'
+  ];
+  var options = {
+    undef: true
+  };
+  var predef = {
+    foo: false
+  };
+  
+  JSHINT(_source, options, predef);
+  let mtr = JSHINT.data();
+  console.log(mtr)
+  console.info(mtr.functions[0].metrics);
+
+```
+this will display the circular complexity of the specified source in this case it is just 1.
+adding <code> "maxcomplexity" : 10 </code> as described in step 4 to the config file is a bit more convinient for the fact that i dont need to inject the source code in data() function every time.
 ___
 
 # :capital_abcd: 10. Definitions
