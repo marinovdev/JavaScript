@@ -2,8 +2,8 @@ const http2 = require('http2');
 const fs = require('fs');
 
 const server = http2.createSecureServer({
-  key: fs.readFileSync('localhost-privkey.pem'),
-  cert: fs.readFileSync('localhost-cert.pem')
+  key: fs.readFileSync('private-key.pem'),
+  cert: fs.readFileSync('marinov-dev.com.crt')
 });
 server.on('error', (err) => console.error(err));
 
@@ -16,4 +16,6 @@ server.on('stream', (stream, headers) => {
   stream.end('<h1>Hello World</h1>');
 });
 
-server.listen(8443);
+server.listen(8443, () => {
+  console.log('listenin on port 8443');
+});
