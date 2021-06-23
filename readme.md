@@ -2672,3 +2672,23 @@ Output:
 - ENOENT is also emitted when the command does not exist.
 
 
+### 11.12. net::ERR_INCOMPLETE_CHUNKED_ENCODING
+Symptoms:
+
+Pages not loading.
+Truncated CSS and JS files.
+Pages hanging.
+Server environment:
+nginx
+
+**Solution**
+ it is being caused by my anti-virus (ESET NOD32 ANTIVIRUS 5).
+
+Whenever I disable the Real-Time protection, the issue disappears. 
+
+### 11.13. Revio quiz app remain unreachable for the internet 
+- server running on port 3001
+- few weeks ago the same server has been accessed from the net
+- NAT filters allow port 3001
+- I tried many other ports without success
+- live server and DonUni is reachable
