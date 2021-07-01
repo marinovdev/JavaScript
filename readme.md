@@ -2324,7 +2324,12 @@ These two adjectives describe phenomena in programming languages:
 
 
 ### 10.4. Middleware
-A middleware is basically a function that will the receive the Request and Response objects, just like your route Handlers do. As a third argument you have another function which you should call once your middleware code completed.
+A middleware is basically a function that will the receive the Request and Response objects, just like your route Handlers do. As a third argument you have
+ another function which you should call once your middleware code completed.
+ 
+### 10.5. Provisioning
+
+The act of providing environment variables is referred to as provisioning.
 ___
 
 # :x: 11. Errors

@@ -211,6 +211,13 @@ font-size: 20px;
 
 }
 ```
+# 10. General
+
+### 10.1. CSS Sprite
+
+In short: CSS Sprites are a means of combining multiple images into a single image file for use on a website, to help with performance. ... 
+The idea was that the computer could fetch a graphic into memory, and then only display parts of that image at a time, which was faster than having to 
+continually fetch new images.
 
 ---
 # 11. Exercise
