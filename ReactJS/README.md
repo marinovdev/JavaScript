@@ -1,8 +1,10 @@
 ### CONTENT
+
 ### [1. Introduction to ReactJS](#1-introduction-to-reactjs-1)
 ### [2. React Components](#2-react-components-1)
 ### [3. React Components – Deep Dive] () // provide link to section starting from this header 
 
+### [10. General](#10-general-1)
 ### [11. Errors](#11-errors-1) 
 ### [12. Definitions](#12-definitions-1)
 ### [13. Debugging](#13-debugging-1)
@@ -967,7 +969,11 @@ MyContext.displayName = 'MyDisplayName';
 <MyContext.Consumer> // "MyDisplayName.Consumer" in DevTools
 
 ```
+---
+# 10. General
+## 10.1. Code snippets
 
+---
 # 11. Errors
 
 ### 11.1 TypeError: this.handleClick is not a function

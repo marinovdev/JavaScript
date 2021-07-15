@@ -1,0 +1,2 @@
+1. serviceworker
+	import * as serviceWorker from './serviceWorker'
